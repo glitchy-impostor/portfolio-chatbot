@@ -1,0 +1,53 @@
+TECHNICAL SKILLS AND COMPETENCIES
+
+PROGRAMMING LANGUAGES
+Krish is proficient in the following programming languages:
+- Python: Primary language for AI/ML development, data analysis, and backend systems. Demonstrated through the 6,000-line RAG Code Generator project.
+- JavaScript: Used for web development and frontend applications
+- HTML/CSS: Frontend web development and styling
+- SQL: Database querying and data manipulation
+- C++: Learnt it for understanding Data Structures at USC
+- Java: Learnt it at USC and High School to make basic applications
+
+FRAMEWORKS AND LIBRARIES
+- FastAPI: Python web framework for building APIs
+- Google Apps Script: Used for building applications at the Baum Family Maker Space
+- Svelte: Frontend JavaScript library (used in portfolio projects)
+- Tailwind CSS: Frontend CSS framework
+- Flask: Python web framework for building backends and APIs
+
+AI/ML AND DATA TECHNOLOGIES
+- OpenAI API: Integration with GPT models for AI applications
+- ChromaDB: Vector database for embedding storage and retrieval
+- RAG (Retrieval-Augmented Generation): Architecture design and implementation
+- Embeddings: Text embedding generation and similarity search
+- FAISS: Vector similarity search library
+- Ollama: Utilized to interface with Local LLMs
+
+DATABASES AND STORAGE
+- Vector databases (ChromaDB)
+- SQL databases (MySQL, PostgreSQL, Supabase)
+- Data storage and retrieval systems
+- Firebase
+
+TOOLS AND PLATFORMS
+- Docker: Containerization and sandboxed execution environments
+- Git/GitHub: Version control and code collaboration
+- GitHub Pages: Static website hosting
+
+SPORTS ANALYTICS SKILLS
+- Player tracking data analysis
+- Statistical modeling for sports metrics
+- Soccer and football analytics methodologies
+
+DATA ANALYSIS
+- Statistical analysis
+- Data visualization
+- Quantitative research methods
+- Mathematical modeling (supported by Mathematical Data Analytics minor)
+
+SOFT SKILLS
+- Leadership: Founded Trident Hacks hackathon
+- Initiative: Self-started multiple projects
+- Communication: Technical writing and documentation, Lot's of experience debating
+- Problem-solving: Complex system design and implementation

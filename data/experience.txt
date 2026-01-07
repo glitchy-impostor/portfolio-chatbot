@@ -1,0 +1,40 @@
+PROFESSIONAL EXPERIENCE
+
+STUDENT WORKER - BAUM FAMILY MAKER SPACE, USC VITERBI
+Location: Los Angeles, CA
+Duration: September 2025 - Present
+Status: Currently employed
+
+Krish works as a Student Worker at the Baum Family Maker Space at USC Viterbi School of Engineering. In this role, he develops software applications and tools that are used by thousands of undergraduate students at USC.
+
+Key responsibilities and achievements:
+- Developing and maintaining software systems used for maker space operations
+- Building Google Apps Script backends for management applications
+- Creating tools that improve the student experience at the maker space
+- Supporting software infrastructure used by the undergraduate student community
+
+This role allows Krish to apply his software development skills in a real-world environment while directly impacting the USC student community.
+
+---
+
+AI DEVELOPMENT AND IMPLEMENTATION INTERN - WHITEKLAY TECHNOLOGIES
+Location: Pune, India
+Duration: Summer 2025 (June 2025 - August 2025)
+
+During his internship at Whiteklay Technologies, Krish built a sophisticated AI-powered code generation system. This was a substantial project totaling nearly 6,000 lines of Python code.
+
+Technical achievements during this internship:
+- Developed a retrieval-augmented generation (RAG) system for enterprise code reuse and generation
+- Implemented vector database storage using ChromaDB for efficient code retrieval
+- Created Docker-based sandboxed execution environments for safe code testing
+- Built support for both OpenAI API and local language models
+- Designed an end-to-end AI platform for code generation and management
+
+This internship demonstrated Krish's ability to build complex AI/ML systems from scratch and work with modern technologies including large language models, vector databases, and containerization.
+
+---
+
+FOUNDER - TRIDENT HACKS
+Duration: 2023 
+
+Founded and led a national student hackathon in India, coordinating operations for 800+ teams across 50+ institutions. Managed end-to-end planning, logistics, sponsorships, and judging infrastructure for a large-scale technical event. Raised ₹54,000 in funding and secured sponsored prizes to support participants and winning teams.

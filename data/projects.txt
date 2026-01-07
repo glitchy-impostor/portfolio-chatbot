@@ -1,0 +1,58 @@
+PROJECTS AND TECHNICAL WORK
+
+RAG CODE GENERATOR
+Type: AI/ML Software Project
+Technologies: Python, ChromaDB, Docker, OpenAI API, Local LLMs
+
+The RAG Code Generator is Krish's most substantial project, developed during his internship at Whiteklay Technologies. It is an AI-powered code generation and reuse platform totaling nearly 6,000 lines of Python code.
+
+Key features:
+- Retrieval-Augmented Generation (RAG) architecture for intelligent code suggestions
+- ChromaDB vector database for storing and retrieving code embeddings
+- Docker-based sandboxed execution for safely running generated code
+- Support for both OpenAI models and local language models
+- Enterprise-focused design for code reuse and standardization
+
+This project demonstrates expertise in AI/ML systems, vector databases, and building production-ready software.
+
+---
+
+SPORTS ANALYTICS PROJECTS
+
+1. Off-Ball Runs Analysis in Soccer
+A comprehensive sports analytics project analyzing off-ball runs in soccer using tracking data, and their effect on defenders and defensive play. This project demonstrated strong methodological rigor and attention to validation, examining player movement patterns when they don't have the ball.
+
+This projects showcase Krish's ability to work with complex sports tracking data and develop novel analytical approaches.
+
+---
+
+TRASHURE COVE
+Type: Hackathon Project
+
+Built a full-stack waste management platform in 24 hours using Flask, React, and AJAX, enabling users to create and participate in public cleanup drives.
+
+---
+
+QGO
+Type: Software Project
+
+Developed a full-stack grocery and local item delivery platform using Flask, PostgreSQL, Svelte, and Tailwind CSS, supporting seamless ordering from local stores with doorstep delivery.
+
+---
+
+VYZ
+Type: Hackathon Project
+
+Built an AI-powered sensory adaptive wearable using an NVIDIA Jetson Orin Nano that fuses real-time audio and visual sensing to dynamically mitigate sensory overload, winning Best Hardware Project at the Good Vibes Only Buildathon.
+
+---
+
+PORTFOLIO WEBSITES
+Type: Web Development
+
+Krish has developed multiple creative portfolio websites showcasing both his technical skills and personality:
+- Professional academic portfolio inspired by clean, minimal design
+- Trading card themed portfolio with sports card aesthetics
+- Netflix-style profile selector landing page
+
+These projects demonstrate frontend development skills and creative design abilities.
