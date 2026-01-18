@@ -529,14 +529,16 @@ async def update_session(user_id: str, session_id: int, update: FlashReadSession
             .eq("user_id", user_id) \
             .execute()
         
-        if result.data:
+        if result.data and len(result.data) > 0:
             return {"success": True, "updated": result.data[0]}
         else:
-            raise HTTPException(status_code=404, detail="Session not found")
+            raise HTTPException(status_code=404, detail=f"Session {session_id} not found for user {user_id}")
             
+    except HTTPException:
+        raise
     except Exception as e:
-        print(f"Error updating session: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        print(f"Error updating session {session_id}: {e}")
+        raise HTTPException(status_code=500, detail=f"Database error: {str(e)}")
 
 @app.delete("/flashread/delete/{user_id}/{session_id}")
 async def delete_session(user_id: str, session_id: int):
