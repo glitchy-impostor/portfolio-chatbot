@@ -411,7 +411,7 @@ async def chat(request: Request, q: QuestionRequest):
         )
 
 # =============================================================================
-# API ENDPOINTS - FlashRead Sessions
+# API ENDPOINTS - FlashRead Sessions (Simple, unambiguous routes)
 # =============================================================================
 
 @app.get("/flashread/health")
@@ -452,83 +452,8 @@ async def create_session(session: FlashReadSessionCreate):
         print(f"Error creating session: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
-# IMPORTANT: More specific routes (with session_id) must come BEFORE general routes
-@app.get("/flashread/sessions/{user_id}/{session_id}")
-async def get_session(user_id: str, session_id: int):
-    """Get a specific session with full data"""
-    if not supabase:
-        raise HTTPException(status_code=503, detail="Database not configured")
-    
-    try:
-        result = supabase.table("flashread_sessions") \
-            .select("*") \
-            .eq("id", session_id) \
-            .eq("user_id", user_id) \
-            .single() \
-            .execute()
-        
-        if result.data:
-            return {"session": result.data}
-        else:
-            raise HTTPException(status_code=404, detail="Session not found")
-            
-    except Exception as e:
-        print(f"Error fetching session: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
-
-@app.patch("/flashread/sessions/{user_id}/{session_id}")
-async def update_session(user_id: str, session_id: int, update: FlashReadSessionUpdate):
-    """Update a session (progress, notes, wpm)"""
-    if not supabase:
-        raise HTTPException(status_code=503, detail="Database not configured")
-    
-    try:
-        data = {"updated_at": datetime.utcnow().isoformat()}
-        
-        if update.current_index is not None:
-            data["current_index"] = update.current_index
-        if update.notes is not None:
-            data["notes"] = update.notes
-        if update.wpm is not None:
-            data["wpm"] = update.wpm
-        
-        result = supabase.table("flashread_sessions") \
-            .update(data) \
-            .eq("id", session_id) \
-            .eq("user_id", user_id) \
-            .execute()
-        
-        if result.data:
-            return {"success": True, "updated": result.data[0]}
-        else:
-            raise HTTPException(status_code=404, detail="Session not found")
-            
-    except Exception as e:
-        print(f"Error updating session: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
-
-@app.delete("/flashread/sessions/{user_id}/{session_id}")
-async def delete_session(user_id: str, session_id: int):
-    """Delete a session"""
-    if not supabase:
-        raise HTTPException(status_code=503, detail="Database not configured")
-    
-    try:
-        result = supabase.table("flashread_sessions") \
-            .delete() \
-            .eq("id", session_id) \
-            .eq("user_id", user_id) \
-            .execute()
-        
-        return {"success": True, "deleted": session_id}
-        
-    except Exception as e:
-        print(f"Error deleting session: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
-
-# General user routes (no session_id) - these come AFTER specific routes
-@app.get("/flashread/sessions/user/{user_id}")
-async def get_user_sessions(user_id: str, limit: int = 20):
+@app.get("/flashread/list/{user_id}")
+async def list_sessions(user_id: str, limit: int = 20):
     """Get all sessions for a user"""
     if not supabase:
         raise HTTPException(status_code=503, detail="Database not configured")
@@ -559,8 +484,81 @@ async def get_user_sessions(user_id: str, limit: int = 20):
         print(f"Error fetching sessions: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.delete("/flashread/sessions/user/{user_id}")
-async def delete_all_user_sessions(user_id: str):
+@app.get("/flashread/get/{user_id}/{session_id}")
+async def get_session(user_id: str, session_id: int):
+    """Get a specific session with full data"""
+    if not supabase:
+        raise HTTPException(status_code=503, detail="Database not configured")
+    
+    try:
+        result = supabase.table("flashread_sessions") \
+            .select("*") \
+            .eq("id", session_id) \
+            .eq("user_id", user_id) \
+            .single() \
+            .execute()
+        
+        if result.data:
+            return {"session": result.data}
+        else:
+            raise HTTPException(status_code=404, detail="Session not found")
+            
+    except Exception as e:
+        print(f"Error fetching session: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.patch("/flashread/update/{user_id}/{session_id}")
+async def update_session(user_id: str, session_id: int, update: FlashReadSessionUpdate):
+    """Update a session (progress, notes, wpm)"""
+    if not supabase:
+        raise HTTPException(status_code=503, detail="Database not configured")
+    
+    try:
+        data = {"updated_at": datetime.utcnow().isoformat()}
+        
+        if update.current_index is not None:
+            data["current_index"] = update.current_index
+        if update.notes is not None:
+            data["notes"] = update.notes
+        if update.wpm is not None:
+            data["wpm"] = update.wpm
+        
+        result = supabase.table("flashread_sessions") \
+            .update(data) \
+            .eq("id", session_id) \
+            .eq("user_id", user_id) \
+            .execute()
+        
+        if result.data:
+            return {"success": True, "updated": result.data[0]}
+        else:
+            raise HTTPException(status_code=404, detail="Session not found")
+            
+    except Exception as e:
+        print(f"Error updating session: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.delete("/flashread/delete/{user_id}/{session_id}")
+async def delete_session(user_id: str, session_id: int):
+    """Delete a session"""
+    if not supabase:
+        raise HTTPException(status_code=503, detail="Database not configured")
+    
+    try:
+        result = supabase.table("flashread_sessions") \
+            .delete() \
+            .eq("id", session_id) \
+            .eq("user_id", user_id) \
+            .execute()
+        
+        return {"success": True, "deleted": session_id}
+        
+    except Exception as e:
+        print(f"Error deleting session: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.delete("/flashread/clear/{user_id}")
+async def clear_all_sessions(user_id: str):
     """Delete all sessions for a user"""
     if not supabase:
         raise HTTPException(status_code=503, detail="Database not configured")
