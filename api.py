@@ -423,7 +423,7 @@ async def flashread_health():
         "ai_model": FLASHREAD_AI_MODEL
     }
 
-@app.post("/flashread/sessions", response_model=dict)
+@app.post("/flashread/sessions")
 async def create_session(session: FlashReadSessionCreate):
     """Create a new reading session"""
     if not supabase:
@@ -452,38 +452,7 @@ async def create_session(session: FlashReadSessionCreate):
         print(f"Error creating session: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/flashread/sessions/{user_id}")
-async def get_sessions(user_id: str, limit: int = 20):
-    """Get all sessions for a user"""
-    if not supabase:
-        raise HTTPException(status_code=503, detail="Database not configured")
-    
-    try:
-        result = supabase.table("flashread_sessions") \
-            .select("id, user_id, file_name, current_index, notes, wpm, created_at, updated_at") \
-            .eq("user_id", user_id) \
-            .order("updated_at", desc=True) \
-            .limit(limit) \
-            .execute()
-        
-        sessions = []
-        for s in result.data:
-            sessions.append({
-                "id": s["id"],
-                "file_name": s["file_name"],
-                "current_index": s["current_index"],
-                "notes_count": len(s.get("notes", []) or []),
-                "wpm": s["wpm"],
-                "created_at": s["created_at"],
-                "updated_at": s["updated_at"]
-            })
-        
-        return {"sessions": sessions}
-        
-    except Exception as e:
-        print(f"Error fetching sessions: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
-
+# IMPORTANT: More specific routes (with session_id) must come BEFORE general routes
 @app.get("/flashread/sessions/{user_id}/{session_id}")
 async def get_session(user_id: str, session_id: int):
     """Get a specific session with full data"""
@@ -557,8 +526,41 @@ async def delete_session(user_id: str, session_id: int):
         print(f"Error deleting session: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.delete("/flashread/sessions/{user_id}")
-async def delete_all_sessions(user_id: str):
+# General user routes (no session_id) - these come AFTER specific routes
+@app.get("/flashread/sessions/user/{user_id}")
+async def get_user_sessions(user_id: str, limit: int = 20):
+    """Get all sessions for a user"""
+    if not supabase:
+        raise HTTPException(status_code=503, detail="Database not configured")
+    
+    try:
+        result = supabase.table("flashread_sessions") \
+            .select("id, user_id, file_name, current_index, notes, wpm, created_at, updated_at") \
+            .eq("user_id", user_id) \
+            .order("updated_at", desc=True) \
+            .limit(limit) \
+            .execute()
+        
+        sessions = []
+        for s in result.data:
+            sessions.append({
+                "id": s["id"],
+                "file_name": s["file_name"],
+                "current_index": s["current_index"],
+                "notes_count": len(s.get("notes", []) or []),
+                "wpm": s["wpm"],
+                "created_at": s["created_at"],
+                "updated_at": s["updated_at"]
+            })
+        
+        return {"sessions": sessions}
+        
+    except Exception as e:
+        print(f"Error fetching sessions: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.delete("/flashread/sessions/user/{user_id}")
+async def delete_all_user_sessions(user_id: str):
     """Delete all sessions for a user"""
     if not supabase:
         raise HTTPException(status_code=503, detail="Database not configured")
@@ -601,7 +603,7 @@ Rules:
 5. If it's a complex sentence, break down what it's saying
 6. Never be condescending - assume the reader is intelligent but unfamiliar with this specific topic"""
 
-        user_prompt = f""" Context from the reading:
+        user_prompt = f"""Context from the reading:
 "{req.context}"
 
 The reader wants to understand: "{req.word}"
