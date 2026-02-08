@@ -1,0 +1,13 @@
+# Additional Requirements for Football Analytics
+# Add these to your existing requirements.txt
+
+# Database (for Football - separate from Supabase)
+psycopg2-binary>=2.9.6
+
+# Data Processing
+pandas>=2.0.0
+pyarrow>=12.0.0
+
+# ML/Models (if using local models)
+scikit-learn>=1.3.0
+joblib>=1.3.0
