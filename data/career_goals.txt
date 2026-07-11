@@ -4,11 +4,12 @@ CURRENT STATUS
 Krish Shah is a junior Computer Science student at USC Viterbi School of Engineering, expected to graduate in 2028. He is currently an AI Engineer Intern at Pretty Good AI, where he builds production medical AI systems, and also works as a Student Worker at the Baum Family Maker Space at USC.
 
 INTERNSHIP AVAILABILITY
-Krish is actively seeking internship opportunities for Summer 2026. He is open to both:
+Krish is actively seeking internship opportunities for Summer 2027. He is open to:
+- AI/ML engineering internships
 - Software engineering internships
 - Sports analytics internships
 
-His ideal role would combine his technical software development skills with his passion for sports analytics, though he is qualified for and interested in pure software engineering and AI/ML roles as well.
+His ideal role would combine his technical software development skills with his passion for sports analytics, though he is qualified for and interested in pure AI/ML and software engineering roles as well.
 
 AREAS OF INTEREST
 Krish is particularly interested in roles involving:
