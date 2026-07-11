@@ -1,28 +1,45 @@
 PROJECTS AND TECHNICAL WORK
 
+BP DEBATE MATTER FILE PIPELINE
+Type: Full Stack Project (Featured)
+Technologies: React, Vite, FastAPI, SQLite, GitHub Actions
+
+Built a 3-component automated research pipeline that produces BP-formatted (British Parliamentary) matter file cards with mechanism chains, clash language, and stock argument connections. The frontend is hosted on GitHub Pages and the API is deployed on Railway. This project combines Krish's technical skills with his passion for competitive debate.
+
+---
+
+OFF-BALL RUN DEFENSIVE ANALYSIS
+Type: Sports Analytics Research (Featured)
+Technologies: Python, pandas, SciPy
+
+Analyzed Metrica Sports tracking data to measure defensive reactions to off-ball runs in soccer using a matched-control methodology. The analysis found a significant defensive disruption effect (Cohen's d = 1.42, p < 0.0001), demonstrating strong methodological rigor and attention to statistical validation. The project examines how defenders react to attacking player movement even when those players don't have the ball.
+
+This project showcases Krish's ability to work with complex sports tracking data and develop novel, statistically rigorous analytical approaches.
+
+---
+
+NFL ANALYTICS CHATBOT
+Type: AI/ML Project (Featured)
+Technologies: Python, FastAPI, FAISS, OpenAI
+
+Built a RAG-powered conversational chatbot over NFL analytics data, featuring vector search and persistent conversation memory. This project applies retrieval-augmented generation to sports analytics, letting users ask natural-language questions about NFL data.
+
+---
+
 RAG CODE GENERATOR
 Type: AI/ML Software Project
 Technologies: Python, ChromaDB, Docker, OpenAI API, Local LLMs
 
-The RAG Code Generator is Krish's most substantial project, developed during his internship at Whiteklay Technologies. It is an AI-powered code generation and reuse platform totaling nearly 6,000 lines of Python code.
+The RAG Code Generator is one of Krish's most substantial projects, developed during his internship at Whiteklay Technologies. It is an AI-powered code generation and reuse platform totaling nearly 6,000 lines of Python code.
 
 Key features:
 - Retrieval-Augmented Generation (RAG) architecture for intelligent code suggestions
 - ChromaDB vector database for storing and retrieving code embeddings
 - Docker-based sandboxed execution for safely running generated code
 - Support for both OpenAI models and local language models
-- Enterprise-focused design for code reuse and standardization
+- Enterprise-focused design for code reuse and standardization, adopted as a company-wide service across multiple engineering teams
 
 This project demonstrates expertise in AI/ML systems, vector databases, and building production-ready software.
-
----
-
-SPORTS ANALYTICS PROJECTS
-
-1. Off-Ball Runs Analysis in Soccer
-A comprehensive sports analytics project analyzing off-ball runs in soccer using tracking data, and their effect on defenders and defensive play. This project demonstrated strong methodological rigor and attention to validation, examining player movement patterns when they don't have the ball.
-
-This projects showcase Krish's ability to work with complex sports tracking data and develop novel analytical approaches.
 
 ---
 
@@ -50,7 +67,7 @@ Built an AI-powered sensory adaptive wearable using an NVIDIA Jetson Orin Nano t
 PORTFOLIO WEBSITES
 Type: Web Development
 
-Krish has developed multiple creative portfolio websites showcasing both his technical skills and personality:
+Krish has developed multiple creative portfolio websites (hosted at krishshah.me) showcasing both his technical skills and personality:
 - Professional academic portfolio inspired by clean, minimal design
 - Trading card themed portfolio with sports card aesthetics
 - Netflix-style profile selector landing page

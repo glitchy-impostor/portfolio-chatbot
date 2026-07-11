@@ -2,42 +2,55 @@ TECHNICAL SKILLS AND COMPETENCIES
 
 PROGRAMMING LANGUAGES
 Krish is proficient in the following programming languages:
-- Python: Primary language for AI/ML development, data analysis, and backend systems. Demonstrated through the 6,000-line RAG Code Generator project.
+- Python: Primary language for AI/ML development, data analysis, and backend systems. Demonstrated through the 6,000-line RAG Code Generator project and production medical AI systems.
 - JavaScript: Used for web development and frontend applications
 - HTML/CSS: Frontend web development and styling
 - SQL: Database querying and data manipulation
-- C++: Learnt it for understanding Data Structures at USC
+- C/C++: Learnt it for understanding Data Structures at USC
 - Java: Learnt it at USC and High School to make basic applications
 
 FRAMEWORKS AND LIBRARIES
-- FastAPI: Python web framework for building APIs
-- Google Apps Script: Used for building applications at the Baum Family Maker Space
-- Svelte: Frontend JavaScript library (used in portfolio projects)
-- Tailwind CSS: Frontend CSS framework
+- FastAPI: Python web framework for building APIs and backends
 - Flask: Python web framework for building backends and APIs
+- React: Frontend JavaScript library (used in projects such as the BP Debate Matter File Pipeline)
+- Vite: Frontend build tooling
+- Svelte: Frontend JavaScript framework (used in portfolio projects)
+- Tailwind CSS: Frontend CSS framework
+- jQuery / AJAX: Used in hackathon projects
+- Google Apps Script: Used for building applications at the Baum Family Maker Space
+- pandas / SciPy: Data analysis and statistical computing (used in sports analytics work)
 
 AI/ML AND DATA TECHNOLOGIES
+- LLM Integration: Working with GPT-4.1 / GPT-4.1-mini and other large language models
 - OpenAI API: Integration with GPT models for AI applications
-- ChromaDB: Vector database for embedding storage and retrieval
 - RAG (Retrieval-Augmented Generation): Architecture design and implementation
-- Embeddings: Text embedding generation and similarity search
+- ChromaDB: Vector database for embedding storage and retrieval
 - FAISS: Vector similarity search library
-- Ollama: Utilized to interface with Local LLMs
+- Embeddings: Text embedding generation and similarity search
+- Ollama: Utilized to interface with local LLMs
+- Voice Agents: Building click-to-call voice agents (at Pretty Good AI)
+- OCR: Optical character recognition (used in automated document/fax processing)
+- Athena EHR API: Integration with Electronic Health Record systems for medical AI
 
 DATABASES AND STORAGE
-- Vector databases (ChromaDB)
-- SQL databases (MySQL, PostgreSQL, Supabase)
-- Data storage and retrieval systems
+- Vector databases (ChromaDB, FAISS)
+- SQL databases (MySQL, PostgreSQL, SQLite, Supabase)
 - Firebase
+- Data storage and retrieval systems
 
 TOOLS AND PLATFORMS
 - Docker: Containerization and sandboxed execution environments
 - Git/GitHub: Version control and code collaboration
+- GitHub Actions: CI/CD automation
+- Datadog: Production metrics and observability
+- Sentry: Error logging and monitoring
+- Railway: Backend/API deployment
+- Vercel: Frontend deployment
 - GitHub Pages: Static website hosting
 
 SPORTS ANALYTICS SKILLS
-- Player tracking data analysis
-- Statistical modeling for sports metrics
+- Player tracking data analysis (e.g., Metrica Sports tracking data)
+- Statistical modeling for sports metrics (matched-control methodology, effect-size testing)
 - Soccer and football analytics methodologies
 
 DATA ANALYSIS
@@ -47,7 +60,19 @@ DATA ANALYSIS
 - Mathematical modeling (supported by Mathematical Data Analytics minor)
 
 SOFT SKILLS
-- Leadership: Founded Trident Hacks hackathon
+- Leadership: Founded Trident Hacks hackathon; served as Student Council President
 - Initiative: Self-started multiple projects
-- Communication: Technical writing and documentation, Lot's of experience debating
+- Communication: Technical writing and documentation, lots of experience debating
 - Problem-solving: Complex system design and implementation
+- Adaptability, Collaboration, Critical Thinking, Innovation, and Resilience
+
+LANGUAGES SPOKEN
+- English
+- Hindi
+- Gujarati
+
+CERTIFICATIONS
+- Back End Development and APIs – freeCodeCamp
+- Scientific Computing with Python – freeCodeCamp
+- Responsive Web Design – freeCodeCamp
+- JavaScript Algorithms and Data Structures – freeCodeCamp

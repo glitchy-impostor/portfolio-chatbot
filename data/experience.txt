@@ -1,40 +1,83 @@
 PROFESSIONAL EXPERIENCE
 
-STUDENT WORKER - BAUM FAMILY MAKER SPACE, USC VITERBI
-Location: Los Angeles, CA
+AI ENGINEER INTERN - PRETTY GOOD AI
+Location: Remote
+Duration: March 2026 - Present
+Status: Currently employed
+
+Krish is an AI Engineer Intern at Pretty Good AI, where he builds production medical AI systems that are deployed to live, patient-facing environments.
+
+Key responsibilities and achievements:
+- Built an automated medical fax processing pipeline (using GPT-4.1-mini) that reduced per-fax handling time from roughly one day to under 15 minutes
+- Developed a click-to-call voice agent and a self-referral booking system integrated with the Athena EHR (Electronic Health Record) API
+- Owns production observability, including Datadog metrics and Sentry error logging
+- Ships features to real, patient-facing production environments in healthcare
+
+This role demonstrates Krish's ability to build and ship reliable, production-grade AI systems in a regulated, high-stakes domain (healthcare), working with LLMs, voice agents, and third-party EHR integrations.
+
+---
+
+STUDENT WORKER (ADVANCED FABRICATION) - BAUM FAMILY MAKER SPACE, USC VITERBI
+Location: Los Angeles, CA (USC Viterbi)
 Duration: September 2025 - Present
 Status: Currently employed
 
-Krish works as a Student Worker at the Baum Family Maker Space at USC Viterbi School of Engineering. In this role, he develops software applications and tools that are used by thousands of undergraduate students at USC.
+Krish works as a Student Worker at the Baum Family Maker Space at USC Viterbi School of Engineering. In this role, he develops and maintains internal software that is used by thousands of undergraduate engineering students.
 
 Key responsibilities and achievements:
-- Developing and maintaining software systems used for maker space operations
-- Building Google Apps Script backends for management applications
-- Creating tools that improve the student experience at the maker space
-- Supporting software infrastructure used by the undergraduate student community
+- Developed and maintained internal software systems and APIs used by 2,700+ engineering students to access Maker Space tools and services
+- Implemented backend features to streamline service requests, resource access, and student workflows
+- Collaborated with staff and student engineers to troubleshoot issues and deploy improvements in a live production environment
 
 This role allows Krish to apply his software development skills in a real-world environment while directly impacting the USC student community.
 
 ---
 
-AI DEVELOPMENT AND IMPLEMENTATION INTERN - WHITEKLAY TECHNOLOGIES
+AI IMPLEMENTATION & DEVELOPMENT INTERN - WHITEKLAY TECHNOLOGIES
 Location: Pune, India
 Duration: Summer 2025 (June 2025 - August 2025)
 
 During his internship at Whiteklay Technologies, Krish built a sophisticated AI-powered code generation system. This was a substantial project totaling nearly 6,000 lines of Python code.
 
 Technical achievements during this internship:
-- Developed a retrieval-augmented generation (RAG) system for enterprise code reuse and generation
+- Designed and implemented a backend system to index and retrieve a large internal codebase, enabling efficient code reuse across teams
+- Built a retrieval-augmented generation (RAG) pipeline allowing AI models to reference legacy code, reducing duplicate development
 - Implemented vector database storage using ChromaDB for efficient code retrieval
 - Created Docker-based sandboxed execution environments for safe code testing
-- Built support for both OpenAI API and local language models
-- Designed an end-to-end AI platform for code generation and management
+- Built support for both the OpenAI API and local language models
+- Integrated open-source and proprietary components into a company-wide service adopted by multiple engineering teams
 
 This internship demonstrated Krish's ability to build complex AI/ML systems from scratch and work with modern technologies including large language models, vector databases, and containerization.
 
 ---
 
-FOUNDER - TRIDENT HACKS
-Duration: 2023 
+FOUNDER & LEAD ORGANIZER - TRIDENT HACKS
+Location: Pune, India
+Duration: 2023
 
-Founded and led a national student hackathon in India, coordinating operations for 800+ teams across 50+ institutions. Managed end-to-end planning, logistics, sponsorships, and judging infrastructure for a large-scale technical event. Raised ₹54,000 in funding and secured sponsored prizes to support participants and winning teams.
+Founded and led a national student hackathon in India, coordinating operations for 800+ teams across 50+ institutions. Managed end-to-end planning, logistics, sponsorships, and judging infrastructure for a large-scale technical event. Raised ₹54,000 in funding and secured sponsored prizes to support participants and winning teams. This grew into India's largest student-run hackathon.
+
+---
+
+COMPETITIVE BP DEBATER - TROJAN DEBATE SOCIETY
+Location: Los Angeles, CA (USC)
+Duration: 2024 - Present
+Status: Current
+
+Krish competes in British Parliamentary (BP) debate for USC as a member of the Trojan Debate Society, including tournaments such as Berkeley IV, USC IV, Princeton IV, UCLA IV, Hypothetical Open, and Zagreb Open.
+
+---
+
+STUDENT COUNCIL PRESIDENT - THE BISHOP'S CO-ED SCHOOL, UNDRI
+Location: Pune, India
+Duration: 2022 - 2024
+
+Served as President (2023-24) and Vice President (2022-23), leading a 100+ member council supporting 4,000 students. Planned and executed large-scale intra- and inter-school events with 500+ participants per event, coordinating teams, timelines, and stakeholders to ensure smooth execution of school-wide initiatives.
+
+---
+
+SALES & MANAGEMENT INTERN - SCHOLASTIC INDIA
+Location: Pune, India
+Duration: July 2022 - December 2022
+
+Managed sales exceeding ₹3,00,000 in three days, handling billing and fulfillment for approximately 500 customer orders. Streamlined order processing and billing workflows to improve operational efficiency under high volume.

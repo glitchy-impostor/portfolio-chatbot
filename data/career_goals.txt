@@ -1,18 +1,18 @@
 CAREER GOALS AND AVAILABILITY
 
 CURRENT STATUS
-Krish Shah is a sophomore Computer Science student at USC Viterbi School of Engineering, expected to graduate in May 2028	.
+Krish Shah is a junior Computer Science student at USC Viterbi School of Engineering, expected to graduate in 2028. He is currently an AI Engineer Intern at Pretty Good AI, where he builds production medical AI systems, and also works as a Student Worker at the Baum Family Maker Space at USC.
 
 INTERNSHIP AVAILABILITY
 Krish is actively seeking internship opportunities for Summer 2026. He is open to both:
 - Software engineering internships
 - Sports analytics internships
 
-His ideal role would combine his technical software development skills with his passion for sports analytics, though he is qualified for and interested in pure software engineering roles as well.
+His ideal role would combine his technical software development skills with his passion for sports analytics, though he is qualified for and interested in pure software engineering and AI/ML roles as well.
 
 AREAS OF INTEREST
 Krish is particularly interested in roles involving:
-1. AI/ML Engineering - Building intelligent systems using machine learning and large language models
+1. AI/ML Engineering - Building intelligent, production systems using machine learning and large language models (including RAG pipelines, voice agents, and LLM integrations)
 2. Sports Analytics - Applying data science to sports, whether football (soccer), American football, or other sports
 3. Full-Stack Development - Building complete applications from frontend to backend
 4. Data Engineering - Working with data pipelines and analytics infrastructure
@@ -21,7 +21,7 @@ WHAT KRISH IS LOOKING FOR
 - Opportunities to work on challenging technical problems
 - Roles where he can learn and grow as an engineer
 - Teams that value curiosity and innovation
-- Projects that have real-world impact
+- Projects that have real-world impact and ship to production
 - Companies with strong engineering culture
 
 LOCATION PREFERENCES
@@ -31,19 +31,21 @@ Krish is currently based in Los Angeles, CA and is open to:
 - Relocation for the right opportunity
 
 RELEVANT QUALIFICATIONS FOR EMPLOYERS
-- Strong academic performance (3.84 GPA, Dean's List)
-- Real-world experience from Whiteklay Technologies internship
-- Current employment at USC Baum Maker Space
-- Demonstrated ability to build complex systems (6,000-line RAG project)
-- Leadership experience (founded Trident Hacks)
+- Strong academic performance (3.88 GPA, Dean's List all four semesters)
+- Production AI/ML experience building patient-facing medical AI systems at Pretty Good AI
+- Real-world experience from the Whiteklay Technologies internship (6,000-line RAG system)
+- Current employment at the USC Baum Family Maker Space, shipping software used by 2,700+ engineering students
+- Demonstrated ability to build complex, production-ready systems end to end
+- Leadership experience (founded Trident Hacks, India's largest student-run hackathon; Student Council President)
 - Unique combination of CS skills + sports analytics passion
 
 WHY HIRE KRISH
 Krish brings a combination of:
 - Strong technical foundation from USC's rigorous CS program
-- Practical experience building production software
-- Quantitative skills from Mathematical Data Analytics minor
+- Practical experience building and shipping production software, including in high-stakes healthcare AI
+- Quantitative skills from the Mathematical Data Analytics minor
 - Genuine passion for sports and analytics
-- Initiative and leadership (founding hackathon, independent projects)
+- Initiative and leadership (founding a national hackathon, leading a student council, independent projects)
+- Strong communication skills honed as a competitive British Parliamentary debater with the Trojan Debate Society
 - Curiosity-driven approach to learning and problem-solving
 - Does not give up, no matter what. Always finds a way to get it done!
